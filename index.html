@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Cosmos Graph</title>
+    <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  </head>
+
+  <body>
+    <div class="app">
+      <div id="labels"></div>
+      <canvas />
+    </div>
+
+    <div class="actions">
+      <div class="actions-header">Actions:</div>
+      <div class="action" id="pause">Pause</div>
+      <div class="action" id="fit-view">Fit View</div>
+      <div>
+        <p>Nodes: <strong id="nodes"></strong></p>
+        <p>Links: <strong id="links"></strong></p>
+      </div>
+      <div id="selected-area">
+        <p>Selected Node: <strong id="selected-node"></strong></p>
+        <p>Input links: <strong id="input-links"></strong></p>
+        <p>Output links: <strong id="output-links"></strong></p>
+      </div>
+    </div>
+
+    <div class="search-box">
+      <select id="node-search" class="node-search form-control"></select>
+    </div>
+    <script src="src/index.ts"></script>
+  </body>
+</html>
